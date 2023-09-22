@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnWell - Article Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the article content */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer .form-group {
+            margin-bottom: 10px;
+        }
+
+        .footer address {
+            font-style: normal;
+        }
+        .article-content {
+            padding: 40px 0;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .author-info {
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Custom CSS for the comment section */
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .navbar {
+            background-color: #007BFF;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        .nav-link {
+            color: #fff;
+        }
+        .search-bar {
+            margin-right: 15px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">LearnWell</a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./2article listings.html">Category 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./3article display.html">Category 2</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline search-bar">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <a class="btn btn-primary" href="./5userprofile.html">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="container">
+        <div class="wrapper">
+            <!--Top menu -->
+            <div class="sidebar">
+               <!--profile image & text-->
+                <!--menu item-->
+            </div>
+    
+        </div>
+        <section class="article-content">
+            <h1 class="article-title">LEARN WELL</h1>
+            <p class="article-meta">Published on June 1, 2023 by John Doe</p>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi eu neque ullamcorper
+                volutpat at eu orci. Donec vulputate tristique mauris, vel blandit arcu dictum nec. Sed laoreet
+                convallis tortor, id tincidunt lectus malesuada quis. Proin quis consectetur elit.
+            </p>
+            <!-- Add more article content here -->
+
+            <!-- Author Information -->
+            <div class="author-info">
+                <h2>About the Author</h2>
+                <img src="https://cdn.mos.cms.futurecdn.net/8ZANr4aVbU7XbMsfgoZMPk-650-80.jpg.webp" alt="Author Avatar">
+                <p>John Doe is an expert in the field of education and has been writing insightful articles for
+                    LearnWell.</p>
+            </div>
+
+            <!-- Comment Section -->
+            <section class="comment-section">
+                <h2>Comments</h2>
+
+                <!-- Sample Comment 1 -->
+                <div class="comment">
+                    <p><strong>Commenter Name</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+
+
+                <!-- Add more comments here (you can fetch them dynamically from a database) -->
+
+                <!-- Comment Form (for users to add comments) -->
+                <div class="comment-form">
+                    <h3>Add a Comment</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name"> STUDENT Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment</label>
+                            <textarea class="form-control" id="comment" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Subscribe</h3>
+                        <p>Stay updated with our latest articles.</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Contact Us</h3>
+                        <address>
+                            <p>123 Main Street</p>
+                            <p>City, State ZIP Code</p>
+                            <p>Email: info@learnwell.com</p>
+                            <p>Phone: +1 (123) 456-7890</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>

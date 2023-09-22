@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnWell - Recent Articles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+         .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer .form-group {
+            margin-bottom: 10px;
+        }
+
+        .footer address {
+            font-style: normal;
+        }
+        /* Style for the Recent Articles section */
+        .recent-articles {
+            padding: 40px 0;
+        }
+
+        /* Style for individual articles */
+        .article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .article img {
+            max-width: 100%;
+        }
+
+        .article h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .excerpt {
+            font-size: 1rem;
+        }
+
+        /* Style for the "Read More" button */
+        .btn-primary {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            background-color: #000000;
+        }
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        .nav-link {
+            color: #fff;
+        }
+        .search-bar {
+            margin-right: 15px;
+        } 
+        .nav-item
+        {
+            color:black ;
+        }
+
+
+        .sidebar {
+    background-color: #f5f5f5;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds sidebar height */
+}
+
+/* Adjust the main content area to the right of the sidebar */
+.content {
+    margin-left: 250px; /* Width of the sidebar */
+    padding: 15px;
+}
+        /* Style for widget headings */
+        .widget h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Style for lists inside widgets */
+        .widget ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        /* Style for list items inside widgets */
+        .widget li {
+            margin-bottom: 10px;
+        }
+
+        /* Style for subscription form input */
+        .widget input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for subscription form button */
+        .widget .btn-primary {
+            width: 100%;
+        }
+
+        /* Style for the main content area */
+        
+    </style>
+</head>
+
+<body>
+   
+    
+
+    <div class="container-fluid">
+         <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#">LearnWell</a> -->
+               
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./2article listings.html">Category 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./3article display.html">Category 2</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline search-bar">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <a class="btn btn-primary" href="./5userprofile.html">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3 sidebar">
+                <!-- ... (your existing sidebar content) ... -->
+
+                <div class="widget">
+                    <h3>Popular Articles</h3>
+                    <ul>
+                        <li><a href="#">Article 1</a></li>
+                        <li><a href="#">Article 2</a></li>
+                        <li><a href="#">Article 3</a></li>
+                        <!-- Add more popular articles -->
+                    </ul>
+                </div>
+        
+                <!-- Recent Comments Widget -->
+                <div class="widget">
+                    <h3>Recent Comments</h3>
+                    <ul>
+                        <li><a href="#">Commenter 1: "Great article!"</a></li>
+                        <li><a href="#">Commenter 2: "I learned a lot."</a></li>
+                        <li><a href="#">Commenter 3: "Thanks for sharing."</a></li>
+                        <!-- Add more recent comments -->
+                    </ul>
+                </div>
+        
+                <!-- Subscription Form Widget -->
+                <div class="widget">
+                    <h3>Subscribe</h3>
+                    <p>Stay updated with our latest articles.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="col-md-9 content">
+                <!-- ... (your existing main content) ... -->
+
+                <div class="container">
+                    <h2>learners guide</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="article">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNm-MxmNbqoyJvF7jwDNW-ltIa9X0mcbN0w&usqp=CAU"
+                                    alt="Article 1 Thumbnail">
+                                <h3>TheBookPond.com</h3>
+                                <p class="excerpt">The Book Pond allows you to sell your old academic textbooks or buy the ones
+                                    you need from other students who are ready to pass them on.</p>
+                                <a href="article1.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="article">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNm-MxmNbqoyJvF7jwDNW-ltIa9X0mcbN0w&usqp=CAU"
+                                    alt="Article 2 Thumbnail">
+                                <h3>UniDays.com</h3>
+                                <p class="excerpt">Just one of many student websites offering discounts, UniDays lists thousands
+                                    of student discounts and offers around the globe. It’s free to join and also available as an
+                                    app.</p>
+                                <a href="article2.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="article">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNm-MxmNbqoyJvF7jwDNW-ltIa9X0mcbN0w&usqp=CAU"
+                                    alt="Article 3 Thumbnail">
+                                <h3>Wikipedia.org</h3>
+                                <p class="excerpt">although not recommended for students the collaboratively edited encyclopedia
+                                    project can be a very useful tool for
+                                    early-stage research into your assignment or project.</p>
+                                <a href="article3.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>Links</h3>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Subscribe</h3>
+                                <p>Stay updated with our latest articles.</p>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter your email">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Contact Us</h3>
+                                <address>
+                                    <p>123 Main Street</p>
+                                    <p>City, State ZIP Code</p>
+                                    <p>Email: info@learnwell.com</p>
+                                    <p>Phone: +1 (123) 456-7890</p>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+            
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - LearnWell</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+         .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer .form-group {
+            margin-bottom: 10px;
+        }
+
+        .footer address {
+            font-style: normal;
+        }
+        .navbar {
+            background-color: #007BFF;
+        }
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        .nav-link {
+            color: #fff;
+        }
+        .search-bar {
+            margin-right: 15px;
+        }
+        /* Style for the user profile */
+        .user-profile {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .user-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+        }
+
+        .user-username {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .user-bio {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the list of contributed articles */
+        .user-articles {
+            margin-top: 20px;
+        }
+
+        .user-articles h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .user-articles ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .user-articles li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">LearnWell</a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./2article listings.html">Category 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./3article display.html">Category 2</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline search-bar">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <a class="btn btn-primary" href="./5userprofile.html">user profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="user-profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRunRGT-vjF28l9PmOiiqLQ3yaiGwvTJD3b2g&usqp=CAU"
+                alt="User Avatar" class="user-avatar">
+            <h2 class="user-username">John Doe</h2>
+            <p class="user-bio">Educator and writer passionate about learning.</p>
+
+            <section class="user-articles">
+                <h3>Contributed Articles</h3>
+                <ul>
+                    <li><a href="#">Article 1</a></li>
+                    <li><a href="#">Article 2</a></li>
+                    <li><a href="#">Article 3</a></li>
+                    <!-- Add more contributed articles -->
+                </ul>
+            </section>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Subscribe</h3>
+                    <p>Stay updated with our latest articles.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p>123 Main Street</p>
+                        <p>City, State ZIP Code</p>
+                        <p>Email: info@learnwell.com</p>
+                        <p>Phone: +1 (123) 456-7890</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
